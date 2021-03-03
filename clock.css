@@ -1,0 +1,59 @@
+body
+{
+    background: black;
+}
+
+h1{
+    margin: 0px;
+    padding: 0px;
+}
+.clockers
+{
+    background: -webkit-linear-gradient(#A833B6  , #C33794 );
+    border: 1px solid -webkit-linear-gradient(#6F36AD, #1F5CEA);
+    padding: 30px 50px;
+    border-radius: 25px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.box
+{
+    animation-name: stupidity;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    /* Makes smood */
+    transition: 0.2s ease;
+}
+
+@keyframes stupidity
+{
+    0%
+    {   /* Start - Format is X , Y */
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25%
+    { 
+        transform: translate(15vw, 0) rotate(100deg);
+    
+    }
+
+    50%
+    {   
+        transform: translate(0vw, 35vh) rotate(175deg);
+    }
+
+    75%
+    {   
+        transform: translate(45vw, 12vh) rotate(200deg);
+    }
+
+    100%
+    {   
+        transform: translate(0, 0) rotate(0deg);
+    }
+} 
