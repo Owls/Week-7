@@ -30,7 +30,16 @@ function updateTime()
 
     //Uses inner html to apply the value of our variables to the HTML. 
     document.getElementById("hours").innerHTML=hours;
-    document.getElementById("minutes").innerHTML=minutes;
+    
+    if(minutes < 10)
+    {
+        document.getElementById("minutes").innerHTML='0' + minutes;
+    }
+    else
+    {
+        document.getElementById("minutes").innerHTML= minutes;
+    }
+
     document.getElementById("seconds").innerHTML=seconds;
 }
 setInterval( updateTime, 1000);
