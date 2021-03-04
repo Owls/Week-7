@@ -10,7 +10,7 @@ h1{
 .clockers
 {
     background: -webkit-linear-gradient(#A833B6  , #C33794 );
-    border: 1px solid -webkit-linear-gradient(#6F36AD, #1F5CEA);
+    border: 3px solid -webkit-linear-gradient(#6F36AD, #1F5CEA);
     padding: 30px 50px;
     border-radius: 25px;
     position: absolute;
